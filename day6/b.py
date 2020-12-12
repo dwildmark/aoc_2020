@@ -5,9 +5,6 @@ with open("day6/input", "r") as inputFile:
     for line in inputFile:
         print(sorted(line.strip("\n")))
         if line == "\n":
-            # print(f'{sorted(answeredQuestions)}, len = {len(answeredQuestions)}')
-            # sum += len(answeredQuestions)
-            # print(sum)
             for key, value in answeredQuestions.items():
                 if value == memberCount:
                     sum += 1
